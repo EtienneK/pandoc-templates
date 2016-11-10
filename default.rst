@@ -21,12 +21,19 @@ $if(math)$
 ..
 
 $endif$
+$if(rawtex)$
+.. role:: raw-latex(raw)
+   :format: latex
+..
+
+$endif$
 $for(include-before)$
 $include-before$
 
 $endfor$
 $if(toc)$
 .. contents::
+   :depth: $toc-depth$
 ..
 
 $endif$
